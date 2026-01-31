@@ -1,3 +1,4 @@
+#Meu primeiro agente de IA com a Framework AGNO
 import os
 from dotenv import load_dotenv
 from agno.agent import Agent
