@@ -8,7 +8,7 @@ from agno.tools.duckduckgo import DuckDuckGoTools
 # Carrega a chave que está no seu arquivo .env
 load_dotenv()
 
-# Criação do Agente autônomo
+# Criação do Agente autônomo OPENAI
 agente = Agent(
     model=OpenAIChat(id="gpt-4o-mini"),
     tools=[DuckDuckGoTools()],
@@ -22,4 +22,5 @@ agente = Agent(
 
 # Comando para o agente falar
 print("--- AGENTE INICIADO ---")
-agente.print_response("Quais as principais linguagens de programação no ano de 2026?", stream=True)
+pergunta = input("Digite a sua pergunta: ")
+agente.print_response(pergunta, stream=True)
