@@ -8,7 +8,7 @@ from agno.tools.duckduckgo import DuckDuckGoTools
 # Carrega a chave que está no seu arquivo .env
 load_dotenv()
 
-# Criação do Agente
+# Criação do Agente autônomo
 agente = Agent(
     model=OpenAIChat(id="gpt-4o-mini"),
     tools=[DuckDuckGoTools()],
