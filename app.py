@@ -21,6 +21,10 @@ agente = Agent(
 )
 
 # Comando para o agente falar
-print("--- AGENTE INICIADO ---")
-pergunta = input("Digite a sua pergunta: ")
-agente.print_response(pergunta, stream=True)
+while True:
+    print("--- AGENTE INICIADO ---")
+    pergunta = input("Digite a sua pergunta: ")
+    if pergunta == "Sair":
+        break
+    else:
+        agente.print_response(pergunta, stream=True)
