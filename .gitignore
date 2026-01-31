@@ -1,3 +1,5 @@
+#Esse .gitignore é para que eu não suba o VENV e nem o ENV (Onde contém a minha API KEY)
+
 .venv/ 
 *.env
 
